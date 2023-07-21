@@ -104,6 +104,10 @@ if [[ $CFG =~ ^[Yy]$ ]]; then
     cp -r dotconfig/swaylock ~/.config/ 2>&1 | tee -a $LOG
     cp -r dotconfig/waybar ~/.config/ 2>&1 | tee -a $LOG
     cp -r dotconfig/wlogout ~/.config/ 2>&1 | tee -a $LOG
+    cp -r dotconfig/wallpapers ~/.config/ 2>&1 | tee -a $LOG
+    cp -r dotconfig/Thunar ~/.config/ 2>&1 | tee -a $LOG
+    cp -r wallpapers ~/ 2>&1 | tee -a $LOG
+    
     
     # Set some files as exacutable 
     chmod +x ~/.config/hypr/xdg-portal-hyprland
