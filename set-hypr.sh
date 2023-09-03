@@ -72,11 +72,11 @@ if [[ $inst =~ ^[Yy]$ ]]; then
    hypr_pkgs="hyprland wl-clipboard wf-recorder rofi wlogout swaylock-effects dunst swaybg kitty"    
    font_pkgs="ttf-nerd-fonts-symbols-common otf-firamono-nerd inter-font otf-sora ttf-fantasque-nerd noto-fonts noto-fonts-emoji ttf-comfortaa"
    font_pkgs2="ttf-jetbrains-mono-nerd ttf-icomoon-feather ttf-iosevka-nerd adobe-source-code-pro-fonts"
-   app_pkgs="nwg-look-bin qt5ct btop jq gvfs ffmpegthumbs swww mousepad mpv  playerctl pamixer noise-suppression-for-voice"
+   app_pkgs="nwg-look-bin wget zip unzip qt5ct btop jq gvfs ffmpegthumbs swww mousepad mpv  playerctl pamixer noise-suppression-for-voice"
    app_pkgs2="polkit-gnome ffmpeg neovim viewnior pavucontrol thunar ffmpegthumbnailer tumbler thunar-archive-plugin xdg-user-dirs"
    theme_pkgs="nordic-theme papirus-icon-theme starship "
 
-    yay -R --noconfirm swaylock waybar
+    #yay -R --noconfirm swaylock waybar
 
     if ! yay -S --noconfirm $git_pkgs $hypr_pkgs $font_pkgs $font_pkgs2 $app_pkgs $app_pkgs2 $theme_pkgs 2>&1 | tee -a $LOG; then
         print_error " Failed to install additional packages - please check the install.log \n"
